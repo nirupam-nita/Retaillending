@@ -1,0 +1,25 @@
+/*******************************************************************************
+ *                                                                             *
+ * Filename    : answer.pseudo                                                 *
+ * Description : Contains a java method for generating random number           *
+ *               and appending it with the input parameter                     *
+ * Author      : Nirupam Chakrabarti                                           *
+ * Date        : 08-March 2016                                                 *
+ *                                                                             *
+ ******************************************************************************/
+
+public String formatName(String name)
+{
+    /**************************************************************************
+    
+    Parameter    : name: String :: string to which the generated number will be appended.
+    Return       : formattedName: String :: name with appended number
+    Methods used : nanoTime(): long :: method that returns current system time in nanoseconds
+                   valueOf(Object obj): String :: converts obj to String
+    
+    ***************************************************************************/
+
+    long randomNumber = (System.nanoTime() ^ 123456789) % (15-6) + 6;
+    String formattedName = name + " " + String.valueOf(randomNumber);
+    return formattedName;
+}

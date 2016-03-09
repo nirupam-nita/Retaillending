@@ -12,9 +12,11 @@ public String formatName(String name)
 {
     /**************************************************************************
     
-    Parameter    : name: String :: string to which the generated number will be appended.
+    Parameter    : name: String ::  string to which the generated number will be
+                                    appended.
     Return       : formattedName: String :: name with appended number
-    Methods used : nanoTime(): long :: method that returns current system time in nanoseconds
+    Methods used : nanoTime(): long :: method that returns current system time 
+                                       in nanoseconds
                    valueOf(Object obj): String :: converts obj to String
     
     ***************************************************************************/
